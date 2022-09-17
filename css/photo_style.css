@@ -1,9 +1,9 @@
 html {
   font-family: sans-serif;
   font-size: 62.5%;
-  ~webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  ~webkit-text-size-adjust: 100%;
-  ~ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -139,9 +139,9 @@ p {
 #home {
   background: url(../images/planets.jpg) no-repeat 50% 50%;
   background-attachment: fixed;
-  ~webkit-background-size: cover;
-  ~moz-background-size: cover;
-  ~o~background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   width: 100%;
   display: block;
@@ -184,7 +184,7 @@ p {
 Contact STYLES
 ==============================================*/
 .flex-container {
-  display: ~webkit-flex;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -272,7 +272,7 @@ Contact STYLES
     box-shadow: 0 0 18px rgba(100,65,0,.8);
   }
 
-  .form-spacer: {
+  .form-spacer {
     padding: 30px 39px;
   }
 
@@ -297,7 +297,7 @@ Contact STYLES
 
   .submit input[type="submit"] {
     color: rgb(225,225,225);
-    cursor: pointer
+    cursor: pointer;
     border: none;
     font-weight: 900;
     outline: none;
@@ -306,7 +306,7 @@ Contact STYLES
     margin: 0px 3%;
     padding: 7px 0px;
     width: 25%;
-    font-size 18px;
+    font-size: 18px;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius:7px;
     background-color: #797a7b;
@@ -338,3 +338,23 @@ Contact STYLES
         font-size: 28px;
       }
     }
+    @media all and (max-width:381px) and (min-width:200px) {
+      .head-main {
+        font-size: 24px;
+      }
+    }
+    @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+   }
+   @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+   }
+   @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
